@@ -1,9 +1,9 @@
-# fx(hash) p5.js template template
+# p5.js fx(hash) template template
 
-This is a template of 'template for an art project using fx(hash) and p5.js.'
+This is a template of 'template for an art project using p5.js and fx(hash).'
 
-- fx(hash) https://www.fxhash.xyz/
 - p5.js https://p5js.org
+- fx(hash) https://www.fxhash.xyz/
 
 # Structure of this template util
 

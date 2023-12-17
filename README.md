@@ -47,14 +47,28 @@ see [fx(hash) doc : Licensing your Project](https://fxhash-documentation.super.s
 ### 1. Copy template to new project directory.
 
 ```sh
-# use p5js and fxhash
+# auto project name ymdhis with p5js and fxhash
+./create.sh
+```
+
+or
+
+```sh
+# auto project name ymdhis with p5js only
+./create.sh 0
+```
+
+or
+
+```sh
+# use PROJECT name with p5js and fxhash
 ./create.sh [PROJECT]
 ```
 
 or
 
 ```sh
-# use p5js only
+# use PROJECT name with p5js only
 ./create.sh [PROJECT] 0
 ```
 
@@ -67,6 +81,18 @@ or
 ```
 
 ### 2. Let's coding with p5.js in sketch.js.
+
+### 3. commit and push to git repos
+
+```sh
+./gitcommit.sh
+```
+
+or
+
+```sh
+./gitcommit.sh [MESSAGE]
+```
 
 ## Release
 
@@ -125,6 +151,15 @@ npx fxhash dev
 ```
 
 ### 2. Let's coding with p5.js in sketch.js.
+
+### 3. commit and push to git repos
+
+```sh
+cd ./projects/[PROJECT]
+git add .
+git commit -m [MESSAGE]
+git push
+```
 
 ## Release
 

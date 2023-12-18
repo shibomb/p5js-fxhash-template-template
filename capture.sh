@@ -19,7 +19,6 @@ if test ! -d "projects/$project"; then
 fi
 
 pushd "projects/$project"
-filename=
 
 if test -e fxhash.js; then
     npx fxhash capture

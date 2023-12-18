@@ -1,6 +1,11 @@
-# create.ps1
-
-$env:Path += ";."
+Get-ChildItem (Get-Location) |
+Where-Object {-not $_.PsIsContainer -and $_.Name -eq ".env"} |
+Get-Content |
+ForEach-Object {
+    $key, $value = $_.split('=', 2);
+    $value = $value.Replace('"', '')
+    Invoke-Expression "`$$key='$value'"
+}
 
 if ($args.Count -eq 0) {
     Write-Host "INFO : no args. create auto ymdhis project"

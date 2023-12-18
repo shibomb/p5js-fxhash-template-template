@@ -85,7 +85,7 @@ or
 ## mac
 ./create.sh 0
 ## win
-./wcreate.ps1 0
+.\wcreate.ps1 0
 
 or
 
@@ -93,7 +93,7 @@ or
 ## mac
 ./create.sh [PROJECT]
 ## win
-./wcreate.ps1 [PROJECT]
+.\wcreate.ps1 [PROJECT]
 
 or
 
@@ -101,7 +101,7 @@ or
 ## mac
 ./create.sh [PROJECT] 0
 ## win
-./wcreate.ps1 [PROJECT] 0
+.\wcreate.ps1 [PROJECT] 0
 ```
 
 ## Development
@@ -112,7 +112,7 @@ or
 ## mac
 ./dev.sh [PROJECT]
 ## wim
-./wdev.ps1 [PROJECT]
+.\wdev.ps1 [PROJECT]
 ```
 
 ### 2. Let's coding with p5.js in sketch.js.
@@ -124,7 +124,7 @@ or
 ## mac
 ./gitcommit.sh
 ## win
-./wgitcommit.ps1
+.\wgitcommit.ps1
 
 or
 
@@ -132,7 +132,7 @@ or
 ## mac
 ./gitcommit.sh [MESSAGE]
 ## win
-./wgitcommit.ps1 [MESSAGE]
+.\wgitcommit.ps1 [MESSAGE]
 ```
 
 ## Release
@@ -143,7 +143,7 @@ or
 ## mac
 ./build.sh [PROJECT]
 ## win
-./wbuild.ps1 [PROJECT]
+.\wbuild.ps1 [PROJECT]
 ```
 
 ### 2. Test capture
@@ -152,7 +152,7 @@ or
 ## mac
 ./capture.sh [PROJECT]
 ## win
-./wbuild.ps1 [PROJECT]
+.\wbuild.ps1 [PROJECT]
 ```
 
 ### 3. Upload the upload.zip on fx(hash)

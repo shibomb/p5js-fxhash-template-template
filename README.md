@@ -31,6 +31,30 @@ This is a template of 'template for an art project using p5.js and fx(hash).'
   - fxhash.js - fx(hash) lib.
   - index.js - fx(hash) params definition.
 
+# Prepare
+
+## for Mac
+
+1. install node.js, npm
+
+2. install fxhash to global
+
+```
+npm i -g @fxhash
+```
+
+## for Win
+
+1. install node.js, npm
+
+2. install fxhash cli to global
+
+```
+npm i -g @fxhash/cli
+```
+
+3. (Set-ExcutionPolicy, If warning displayed to run.)
+
 # How to use (A. use shortcut scripts)
 
 ## Create new
@@ -46,30 +70,38 @@ see [fx(hash) doc : Licensing your Project](https://fxhash-documentation.super.s
 
 ### 1. Copy template to new project directory.
 
+4 patterns.
+
 ```sh
 # auto project name ymdhis with p5js and fxhash
+## mac
 ./create.sh
-```
+## win
+.\wcreate.ps1
 
 or
 
-```sh
 # auto project name ymdhis with p5js only
+## mac
 ./create.sh 0
-```
+## win
+./wcreate.ps1 0
 
 or
 
-```sh
 # use PROJECT name with p5js and fxhash
+## mac
 ./create.sh [PROJECT]
-```
+## win
+./wcreate.ps1 [PROJECT]
 
 or
 
-```sh
 # use PROJECT name with p5js only
+## mac
 ./create.sh [PROJECT] 0
+## win
+./wcreate.ps1 [PROJECT] 0
 ```
 
 ## Development
@@ -77,7 +109,10 @@ or
 ### 1. Run dev server
 
 ```sh
+## mac
 ./dev.sh [PROJECT]
+## wim
+./wdev.ps1 [PROJECT]
 ```
 
 ### 2. Let's coding with p5.js in sketch.js.
@@ -85,13 +120,19 @@ or
 ### 3. commit and push to git repos
 
 ```sh
+# with auto YMDHIS
+## mac
 ./gitcommit.sh
-```
+## win
+./wgitcommit.ps1
 
 or
 
-```sh
+# with message
+## mac
 ./gitcommit.sh [MESSAGE]
+## win
+./wgitcommit.ps1 [MESSAGE]
 ```
 
 ## Release
@@ -99,13 +140,19 @@ or
 ### 1. Create upload.zip
 
 ```sh
+## mac
 ./build.sh [PROJECT]
+## win
+./wbuild.ps1 [PROJECT]
 ```
 
 ### 2. Test capture
 
 ```sh
+## mac
 ./capture.sh [PROJECT]
+## win
+./wbuild.ps1 [PROJECT]
 ```
 
 ### 3. Upload the upload.zip on fx(hash)
@@ -113,6 +160,10 @@ or
 [mint generative on fx(hash)](https://www.fxhash.xyz/mint-generative/)
 
 # How to use (B. self operation)
+
+Sorry, this entry is only for Mac.
+
+If you are on Windows, please read the handling of folders and files accordingly, and replace "npx fxhash" with the [@fxhash/cli](https://github.com/fxhash/fxhash-package/tree/main/packages/fxhash-cli) command.
 
 ## Create new
 
@@ -191,3 +242,4 @@ mv ./capture-*.jpg ../../captures/
 - fx(hash) https://fxhash.xyz
 - fx(hash) document https://fxhash-documentation.super.site
 - fx(hash) CLI Usage https://fxhash-documentation.super.site/cli-usage
+- @fxhash/Cli https://github.com/fxhash/fxhash-package/tree/main/packages/fxhash-cli

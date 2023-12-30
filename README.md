@@ -106,7 +106,7 @@ or
 
 ## Development
 
-### 1. Run dev server
+### 1. (with fxhash) Run dev server
 
 ```sh
 ## mac
@@ -114,6 +114,10 @@ or
 ## wim
 .\wdev.ps1 [PROJECT]
 ```
+
+### 1. (without fxhash) Live preview
+
+Preview your indx.html by VSCode live preview extension.
 
 ### 2. Let's coding with p5.js in sketch.js.
 

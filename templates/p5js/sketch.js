@@ -113,7 +113,7 @@ function windowResized() {
 
 /**
 [p] pause / resume
-[o] next freme
+[o] next frame
 [0] save gif
 [1-4] capture image with pixel density 1-4 
 */
